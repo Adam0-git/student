@@ -7,23 +7,23 @@ comments: true
 
 ## As a conversation Starter
 Favorite Video Games:
-Limbus Company
-Honkai Star Rail
-Wuthering Waves
-Geometry Dash
+Limbus Company,
+Honkai Star Rail,
+Wuthering Waves,
+Geometry Dash,
 
 Favorite Anime I watch:
-Frieren
-Solo Leveling
-Jujutsu Kaisen
+Frieren,
+Solo Leveling,
+Jujutsu Kaisen,
 
 Favorite Songs:
-Hero by Mili
-Compass by Mili
-Through Patches of Violet by Mili
-Frostbite by Ohaikou Music
+Hero by Mili,
+Compass by Mili,
+Through Patches of Violet by Mili,
+Frostbite by Ohaikou Music,
 
-Here are some places I have been to.
+Here are some places I have lived
 
 <comment>
 Flags are made using Wikipedia images
@@ -77,9 +77,7 @@ Flags are made using Wikipedia images
     var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
     var living_in_the_world = [
         {"flag": "0/01/Flag_of_California.svg", "greeting": "Hey", "description": "California - All my life"},
-        {"flag": "b/b9/Flag_of_Oregon.svg", "greeting": "Hello", "description": "Oregon - 2015"},
-        {"flag": "b/be/Flag_of_Japan.svg", "greeting": "Hi", "description": "Japan - 2023 & 2025"},
-        {"flag": "e/ef/Flag_of_Korea.svg", "greeting": "Greetings", "description": "Korea - 2025"},
+
     ];
 
     // 3a. Consider how to update style count for size of container
@@ -128,8 +126,17 @@ Family means everything to me
 I have been very close to my mom. I unfortunately lost my dad to a heart attack in 2023, and because I have no siblings, I have only my mom to live with. But even still, family is everything and I'm glad to have family close to me. I am lucky that I have many cousins who live close to me, even if they're a lot older than me. 
 
 <comment>
-Gallery of pictures
+Gallery of pictures of my Family
 </comment>
 <div class="image-gallery">
-  <img width="1102" height="1505" alt="Image" src="https://github.com/user-attachments/assets/b043e68d-95b9-4e06-96fb-2dd692d7cd40" />
-</div>
+ <img width="2055" height="1510" alt="Image" src="https://github.com/user-attachments/assets/42470b9f-1d9a-4872-be02-089de56df794" />
+
+<img width="1117" height="1501" alt="Image" src="https://github.com/user-attachments/assets/bdcd39f4-505b-4ec6-ba17-9024dcf0671b" />
+
+<img width="1142" height="1482" alt="Image" src="https://github.com/user-attachments/assets/df4a2999-ccf5-4a50-96e9-05de759c5679" />
+
+<img width="1125" height="1496" alt="Image" src="https://github.com/user-attachments/assets/bd81b0e8-e729-4390-a4bd-596d23a974b6" />
+
+<img width="2008" height="1510" alt="Image" src="https://github.com/user-attachments/assets/f47769c1-c9fd-420a-b5ee-a846fd4444d9" />
+
+<img width="1128" height="1508" alt="Image" src="https://github.com/user-attachments/assets/22fbf59e-2d35-4697-8b81-23fd175a3d56" />
