@@ -22,6 +22,9 @@ Hero by Mili,
 Compass by Mili,
 Through Patches of Violet by Mili,
 Frostbite by Ohaikou Music,
+Peach Pit and Cyanide by Mili,
+In Hell We Live, Lament by Mili feat. KIHOW from MYTH & ROID,
+To Your Oblivion by Mili
 
 Here are some places I have lived
 
