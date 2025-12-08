@@ -129,7 +129,7 @@ Family means everything to me
 I have been very close to my mom. I unfortunately lost my dad to a heart attack in 2023, and because I have no siblings, I have only my mom to live with. But even still, family is everything and I'm glad to have family close to me. I am lucky that I have many cousins who live close to me, even if they're a lot older than me. 
 
 <comment>
-Gallery of pictures of my Family
+Gallery of pictures of my Family.
 </comment>
 <div class="image-gallery">
  <img width="2055" height="1510" alt="Image" src="https://github.com/user-attachments/assets/42470b9f-1d9a-4872-be02-089de56df794" />
