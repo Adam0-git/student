@@ -41,10 +41,9 @@ Favorite TV Shows
         ? (site_base.replace(//$/, '') + '/images/fav_shows/')
         : './images/fav_shows/';
     var favorite_shows = [
-        {"img": "![Image](https://github.com/user-attachments/assets/061d9df9-62c1-489d-9776-95413086d1a4)", "title": "Frieren Beyond Journey's End"},
-        {"img": "Bleach.webp", "title": "Bleach — TYBW"},
-        {"img": "White_Collar.jpeg", "title": "White Collar"},
-        {"img": "Sienfeld.webp", "title": "Seinfeld"}
+        {"img": "Frieren Beyond Journey's End.webp", "title": "Frieren Beyond Journey's End"},
+        {"img": "Solo Leveling.webp", "title": "Solo Leveling"},
+        {"img": "White_Collar.Jujutsu Kaisen.jpeg", "title": "Jujutsu Kaisen"},
     ];
 
     var showsContainer = document.getElementById("shows_grid");
