@@ -26,6 +26,42 @@ Peach Pit and Cyanide by Mili,
 In Hell We Live, Lament by Mili feat. KIHOW from MYTH & ROID,
 To Your Oblivion by Mili
 
+</script>
+
+<!-- Favorite TV Shows grid -->
+Favorite TV Shows
+<div class="grid-container" id="shows_grid">
+    <!-- Favorite shows will be added here by JavaScript -->
+</div>
+
+<script>
+    // Base path for local images (place your images in /images/fav_shows/)
+    var site_base = "{{ site.baseurl | default: '' }}";
+    var shows_http_source = (site_base && site_base !== '')
+        ? (site_base.replace(//$/, '') + '/images/fav_shows/')
+        : './images/fav_shows/';
+    var favorite_shows = [
+        {"img": "![Image](https://github.com/user-attachments/assets/061d9df9-62c1-489d-9776-95413086d1a4)", "title": "Frieren Beyond Journey's End"},
+        {"img": "Bleach.webp", "title": "Bleach — TYBW"},
+        {"img": "White_Collar.jpeg", "title": "White Collar"},
+        {"img": "Sienfeld.webp", "title": "Seinfeld"}
+    ];
+
+    var showsContainer = document.getElementById("shows_grid");
+    for (const show of favorite_shows) {
+        var item = document.createElement("div");
+        item.className = "grid-item";
+        var img = document.createElement("img");
+        img.src = shows_http_source + encodeURIComponent(show.img);
+        img.alt = show.title;
+        var p = document.createElement("p");
+        p.textContent = show.title;
+        item.appendChild(img);
+        item.appendChild(p);
+        showsContainer.appendChild(item);
+    }
+</script>
+
 Here are some places I have lived
 
 <comment>
