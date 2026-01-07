@@ -41,9 +41,9 @@ Favorite TV Shows
         ? (site_base.replace)//$/, '') + '/images/fav_shows/')
         : './images/fav_shows/';
     var favorite_shows = [
-        {"img": "FrierenBeyondJourney'sEnd.webp", "title": "Frieren Beyond Journey's End"},
-        {"img": "SoloLeveling.webp", "title": "Solo Leveling"},
-        {"img": "JujutsuKaisen.jpeg", "title": "Jujutsu Kaisen"},
+        {"img": "![Image](https://github.com/user-attachments/assets/061d9df9-62c1-489d-9776-95413086d1a4)", "title": "Frieren Beyond Journey's End"},
+        {"img": "![Image](https://github.com/user-attachments/assets/58f2e77d-baa2-4bbb-a0d2-c62e96afb659)", "title": "Solo Leveling"},
+        {"img": "![Image](https://github.com/user-attachments/assets/2134cdf4-4c4d-4dfc-9502-4846a98ce9a1)", "title": "Jujutsu Kaisen"},
     ];
 
     var showsContainer = document.getElementById("shows_grid");
