@@ -38,12 +38,12 @@ Favorite TV Shows
     // Base path for local images (place your images in /images/fav_shows/)
     var site_base = "{{ site.baseurl | default: '' }}";
     var shows_http_source = (site_base && site_base !== '')
-        ? (site_base.replace(//$/, '') + '/images/fav_shows/')
+        ? (site_base.replace)//$/, '') + '/images/fav_shows/')
         : './images/fav_shows/';
     var favorite_shows = [
         {"img": "FrierenBeyondJourney'sEnd.webp", "title": "Frieren Beyond Journey's End"},
         {"img": "SoloLeveling.webp", "title": "Solo Leveling"},
-        {"img": "Jujutsu Kaisen.jpeg", "title": "Jujutsu Kaisen"},
+        {"img": "JujutsuKaisen.jpeg", "title": "Jujutsu Kaisen"},
     ];
 
     var showsContainer = document.getElementById("shows_grid");
