@@ -65,6 +65,49 @@ To Your Oblivion by Mili
     }
 </script>
 
+</script>
+
+<!-- Favorite Games grid -->
+<h2>Favorite Games</h2>
+<div class="grid-container" id="shows_grid">
+    <!-- Favorite games will be added here by JavaScript -->
+</div>
+
+<script>
+    var favorite_games = [
+        {
+            "img": "![Image](https://github.com/user-attachments/assets/25c5c0fa-0be3-4212-9897-12b345851a13)",
+            "title": "Limbus Company"
+        },
+        {
+            "img": "![Image](https://github.com/user-attachments/assets/4320b238-2926-4a3c-9c34-622fb47669bc)",
+            "title": "Geometry Dash"
+        },
+        {
+            "img": "![Image](https://github.com/user-attachments/assets/0c1a33e0-04b1-43b8-9ee4-39946316da81)",
+            "title": "Honkai Star Rail"
+        }
+         {
+            "img": "![Image](https://github.com/user-attachments/assets/a81d8c62-9fda-40c9-8f38-46aed9bcbbe0)",
+            "title": "Wuthering Waves"
+        }
+    ];
+
+    var showsContainer = document.getElementById("shows_grid");
+    for (const show of favorite_shows) {
+        var item = document.createElement("div");
+        item.className = "grid-item";
+        var img = document.createElement("img");
+        img.src = show.img;
+        img.alt = show.title;
+        var p = document.createElement("p");
+        p.textContent = show.title;
+        item.appendChild(img);
+        item.appendChild(p);
+        showsContainer.appendChild(item);
+    }
+</script>
+
 Here are some places I have lived
 
 <comment>
