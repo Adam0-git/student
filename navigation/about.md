@@ -77,19 +77,19 @@ To Your Oblivion by Mili
     var favorite_games = [
         {
             "img": "https://github.com/user-attachments/assets/25c5c0fa-0be3-4212-9897-12b345851a13",
-            "title": "Limbus Company"
+            "title": "Wuthering Waves"
         },
         {
             "img": "https://github.com/user-attachments/assets/4320b238-2926-4a3c-9c34-622fb47669bc",
-            "title": "Geometry Dash"
-        },
-        {
-            "img": "https://github.com/user-attachments/assets/0c1a33e0-04b1-43b8-9ee4-39946316da81",
             "title": "Honkai Star Rail"
         },
         {
+            "img": "https://github.com/user-attachments/assets/0c1a33e0-04b1-43b8-9ee4-39946316da81",
+            "title": "Geometry Dash"
+        },
+        {
             "img": "https://github.com/user-attachments/assets/a81d8c62-9fda-40c9-8f38-46aed9bcbbe0",
-            "title": "Wuthering Waves"
+            "title": "Limbus Company"
         }
     ];
 
