@@ -69,42 +69,42 @@ To Your Oblivion by Mili
 
 <!-- Favorite Games grid -->
 <h2>Favorite Games</h2>
-<div class="grid-container" id="shows_grid">
+<div class="grid-container" id="games_grid">
     <!-- Favorite games will be added here by JavaScript -->
 </div>
 
 <script>
     var favorite_games = [
         {
-            "img": "![Image](https://github.com/user-attachments/assets/25c5c0fa-0be3-4212-9897-12b345851a13)",
+            "img": "https://github.com/user-attachments/assets/25c5c0fa-0be3-4212-9897-12b345851a13",
             "title": "Limbus Company"
         },
         {
-            "img": "![Image](https://github.com/user-attachments/assets/4320b238-2926-4a3c-9c34-622fb47669bc)",
+            "img": "https://github.com/user-attachments/assets/4320b238-2926-4a3c-9c34-622fb47669bc",
             "title": "Geometry Dash"
         },
         {
-            "img": "![Image](https://github.com/user-attachments/assets/0c1a33e0-04b1-43b8-9ee4-39946316da81)",
+            "img": "https://github.com/user-attachments/assets/0c1a33e0-04b1-43b8-9ee4-39946316da81",
             "title": "Honkai Star Rail"
-        }
-         {
-            "img": "![Image](https://github.com/user-attachments/assets/a81d8c62-9fda-40c9-8f38-46aed9bcbbe0)",
+        },
+        {
+            "img": "https://github.com/user-attachments/assets/a81d8c62-9fda-40c9-8f38-46aed9bcbbe0",
             "title": "Wuthering Waves"
         }
     ];
 
-    var showsContainer = document.getElementById("shows_grid");
-    for (const show of favorite_shows) {
+    var gamesContainer = document.getElementById("games_grid");
+    for (const game of favorite_games) {
         var item = document.createElement("div");
         item.className = "grid-item";
         var img = document.createElement("img");
-        img.src = show.img;
-        img.alt = show.title;
+        img.src = game.img;
+        img.alt = game.title;
         var p = document.createElement("p");
-        p.textContent = show.title;
+        p.textContent = game.title;
         item.appendChild(img);
         item.appendChild(p);
-        showsContainer.appendChild(item);
+        gamesContainer.appendChild(item);
     }
 </script>
 
