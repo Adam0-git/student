@@ -41,9 +41,9 @@ Favorite TV Shows
         ? (site_base.replace)//$/, '') + '/images/fav_shows/')
         : './images/fav_shows/';
     var favorite_shows = [
-        {"img": "<img width="640" height="273" alt="Image" src="https://github.com/user-attachments/assets/e714f34b-77fc-42e3-9a32-3b8a0072d988" />", "title": "Frieren Beyond Journey's End"},
-        {"img": "<img width="640" height="312" alt="Image" src="https://github.com/user-attachments/assets/9aa11b4a-6f8d-42c2-8f96-dd857dabf952" />", "title": "Solo Leveling"},
-        {"img": "<img width="640" height="234" alt="Image" src="https://github.com/user-attachments/assets/382dd0c1-291e-48a8-9cb5-b61886573c47" />", "title": "Jujutsu Kaisen"},
+        "img": "<img width="640" height="273" alt="Image" src="https://github.com/user-attachments/assets/e714f34b-77fc-42e3-9a32-3b8a0072d988" />", "title": "Frieren Beyond Journey's End"},
+        "img": "<img width="640" height="312" alt="Image" src="https://github.com/user-attachments/assets/9aa11b4a-6f8d-42c2-8f96-dd857dabf952" />", "title": "Solo Leveling"},
+        "img": "<img width="640" height="234" alt="Image" src="https://github.com/user-attachments/assets/382dd0c1-291e-48a8-9cb5-b61886573c47" />", "title": "Jujutsu Kaisen"},
     ];
 
     var showsContainer = document.getElementById("shows_grid");
