@@ -26,40 +26,40 @@ Peach Pit and Cyanide by Mili,
 In Hell We Live, Lament by Mili feat. KIHOW from MYTH & ROID,
 To Your Oblivion by Mili
 
-</script>
+// Base path for local images (place your images in /images/fav_shows/)
+var site_base = "{{ site.baseurl | default: '' }}";
+var shows_http_source = (site_base && site_base !== '')
+    ? (site_base.replace(/\/$/, '') + '/images/fav_shows/')
+    : './images/fav_shows/';
 
-<!-- Favorite TV Shows grid -->
-Favorite TV Shows
-<div class="grid-container" id="shows_grid">
-    <!-- Favorite shows will be added here by JavaScript -->
-</div>
-
-<script>
-    // Base path for local images (place your images in /images/fav_shows/)
-    var site_base = "{{ site.baseurl | default: '' }}";
-    var shows_http_source = (site_base && site_base !== '')
-        ? (site_base.replace)//$/, '') + '/images/fav_shows/')
-        : './images/fav_shows/';
-    var favorite_shows = [
-        "img": "<img width="640" height="273" alt="Image" src="https://github.com/user-attachments/assets/e714f34b-77fc-42e3-9a32-3b8a0072d988" />", "title": "Frieren Beyond Journey's End"},
-        "img": "<img width="640" height="312" alt="Image" src="https://github.com/user-attachments/assets/9aa11b4a-6f8d-42c2-8f96-dd857dabf952" />", "title": "Solo Leveling"},
-        "img": "<img width="640" height="234" alt="Image" src="https://github.com/user-attachments/assets/382dd0c1-291e-48a8-9cb5-b61886573c47" />", "title": "Jujutsu Kaisen"},
-    ];
-
-    var showsContainer = document.getElementById("shows_grid");
-    for (const show of favorite_shows) {
-        var item = document.createElement("div");
-        item.className = "grid-item";
-        var img = document.createElement("img");
-        img.src = shows_http_source + encodeURIComponent(show.img);
-        img.alt = show.title;
-        var p = document.createElement("p");
-        p.textContent = show.title;
-        item.appendChild(img);
-        item.appendChild(p);
-        showsContainer.appendChild(item);
+var favorite_shows = [
+    {
+        "img": "https://github.com/user-attachments/assets/e714f34b-77fc-42e3-9a32-3b8a0072d988",
+        "title": "Frieren Beyond Journey's End"
+    },
+    {
+        "img": "https://github.com/user-attachments/assets/9aa11b4a-6f8d-42c2-8f96-dd857dabf952",
+        "title": "Solo Leveling"
+    },
+    {
+        "img": "https://github.com/user-attachments/assets/382dd0c1-291e-48a8-9cb5-b61886573c47",
+        "title": "Jujutsu Kaisen"
     }
-</script>
+];
+
+var showsContainer = document.getElementById("shows_grid");
+for (const show of favorite_shows) {
+    var item = document.createElement("div");
+    item.className = "grid-item";
+    var img = document.createElement("img");
+    img.src = show.img; // Just use the URL directly
+    img.alt = show.title;
+    var p = document.createElement("p");
+    p.textContent = show.title;
+    item.appendChild(img);
+    item.appendChild(p);
+    showsContainer.appendChild(item);
+}
 
 Here are some places I have lived
 
