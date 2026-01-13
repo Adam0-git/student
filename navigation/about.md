@@ -26,39 +26,128 @@ Peach Pit and Cyanide by Mili,
 In Hell We Live, Lament by Mili feat. KIHOW from MYTH & ROID,
 To Your Oblivion by Mili
 
-# Boolean basics
-is_sunny = True
-is_raining = False
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean Choices</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .question {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+            margin-top: 0;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        button {
+            flex: 1;
+            padding: 12px 24px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .true-btn {
+            background: #4CAF50;
+            color: white;
+        }
+        .false-btn {
+            background: #f44336;
+            color: white;
+        }
+        .true-btn:hover {
+            background: #45a049;
+        }
+        .false-btn:hover {
+            background: #da190b;
+        }
+        .result {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: none;
+        }
+        .result.show {
+            display: block;
+        }
+        .result.true {
+            background: #d4edda;
+            color: #155724;
+        }
+        .result.false {
+            background: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <h1>Boolean Choice Demo</h1>
+    
+    <div class="question">
+        <h2>Is it sunny outside?</h2>
+        <div class="buttons">
+            <button class="true-btn" onclick="setChoice('sunny', true)">True ✓</button>
+            <button class="false-btn" onclick="setChoice('sunny', false)">False ✗</button>
+        </div>
+        <div id="sunny-result" class="result"></div>
+    </div>
 
-print(f"Is it sunny? {is_sunny}")
-print(f"Is it raining? {is_raining}")
+    <div class="question">
+        <h2>Are you over 18?</h2>
+        <div class="buttons">
+            <button class="true-btn" onclick="setChoice('age', true)">True ✓</button>
+            <button class="false-btn" onclick="setChoice('age', false)">False ✗</button>
+        </div>
+        <div id="age-result" class="result"></div>
+    </div>
 
-# Boolean operations
-print("\n--- Boolean Operations ---")
-print(f"is_sunny AND is_raining: {is_sunny and is_raining}")
-print(f"is_sunny OR is_raining: {is_sunny or is_raining}")
-print(f"NOT is_sunny: {not is_sunny}")
+    <div class="question">
+        <h2>Do you like pizza?</h2>
+        <div class="buttons">
+            <button class="true-btn" onclick="setChoice('pizza', true)">True ✓</button>
+            <button class="false-btn" onclick="setChoice('pizza', false)">False ✗</button>
+        </div>
+        <div id="pizza-result" class="result"></div>
+    </div>
 
-# Comparison operators return booleans
-age = 25
-print("\n--- Comparisons ---")
-print(f"age > 18: {age > 18}")
-print(f"age == 25: {age == 25}")
-print(f"age < 20: {age < 20}")
+    <script>
+        let choices = {
+            sunny: null,
+            age: null,
+            pizza: null
+        };
 
-# Using booleans in conditionals
-print("\n--- Conditionals ---")
-if is_sunny:
-    print("Bring sunglasses!")
-else:
-    print("Maybe bring an umbrella.")
-
-# Boolean function example
-def is_even(number):
-    return number % 2 == 0
-
-print(f"\nIs 4 even? {is_even(4)}")
-print(f"Is 7 even? {is_even(7)}")
+        function setChoice(question, value) {
+            choices[question] = value;
+            const resultDiv = document.getElementById(question + '-result');
+            resultDiv.className = 'result show ' + (value ? 'true' : 'false');
+            resultDiv.textContent = `You selected: ${value}`;
+            
+            console.log(`${question}: ${value}`);
+            console.log('All choices:', choices);
+        }
+    </script>
+</body>
+</html>
 
 <!-- Favorite TV Shows grid -->
 <h2>Favorite TV Shows</h2>
