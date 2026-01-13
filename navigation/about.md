@@ -26,7 +26,39 @@ Peach Pit and Cyanide by Mili,
 In Hell We Live, Lament by Mili feat. KIHOW from MYTH & ROID,
 To Your Oblivion by Mili
 
-</script>
+# Boolean basics
+is_sunny = True
+is_raining = False
+
+print(f"Is it sunny? {is_sunny}")
+print(f"Is it raining? {is_raining}")
+
+# Boolean operations
+print("\n--- Boolean Operations ---")
+print(f"is_sunny AND is_raining: {is_sunny and is_raining}")
+print(f"is_sunny OR is_raining: {is_sunny or is_raining}")
+print(f"NOT is_sunny: {not is_sunny}")
+
+# Comparison operators return booleans
+age = 25
+print("\n--- Comparisons ---")
+print(f"age > 18: {age > 18}")
+print(f"age == 25: {age == 25}")
+print(f"age < 20: {age < 20}")
+
+# Using booleans in conditionals
+print("\n--- Conditionals ---")
+if is_sunny:
+    print("Bring sunglasses!")
+else:
+    print("Maybe bring an umbrella.")
+
+# Boolean function example
+def is_even(number):
+    return number % 2 == 0
+
+print(f"\nIs 4 even? {is_even(4)}")
+print(f"Is 7 even? {is_even(7)}")
 
 <!-- Favorite TV Shows grid -->
 <h2>Favorite TV Shows</h2>
@@ -65,7 +97,7 @@ To Your Oblivion by Mili
     }
 </script>
 
-</script>
+
 
 <!-- Favorite Games grid -->
 <h2>Favorite Games</h2>
@@ -77,19 +109,19 @@ To Your Oblivion by Mili
     var favorite_games = [
         {
             "img": "https://github.com/user-attachments/assets/25c5c0fa-0be3-4212-9897-12b345851a13",
-            "title": "Wuthering Waves"
+            "title": "Wuthering Waves. Open-world game"
         },
         {
             "img": "https://github.com/user-attachments/assets/4320b238-2926-4a3c-9c34-622fb47669bc",
-            "title": "Honkai Star Rail"
+            "title": "Honkai Star Rail. High quality game, low quality effort. My favorite character"
         },
         {
             "img": "https://github.com/user-attachments/assets/0c1a33e0-04b1-43b8-9ee4-39946316da81",
-            "title": "Geometry Dash"
+            "title": "Geometry Dash. Cube jump over spike. My hardest level beaten"
         },
         {
             "img": "https://github.com/user-attachments/assets/a81d8c62-9fda-40c9-8f38-46aed9bcbbe0",
-            "title": "Limbus Company"
+            "title": "Limbus Company. Music carried game"
         }
     ];
 
