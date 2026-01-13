@@ -40,7 +40,7 @@ To Your Oblivion by Mili
             padding: 20px;
         }
         .question {
-            background: white;
+            background: black;
             padding: 20px;
             margin: 20px 0;
             border-radius: 8px;
