@@ -26,7 +26,7 @@ Peach Pit and Cyanide by Mili,
 In Hell We Live, Lament by Mili feat. KIHOW from MYTH & ROID,
 To Your Oblivion by Mili
 
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
