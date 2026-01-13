@@ -38,7 +38,6 @@ To Your Oblivion by Mili
             max-width: 600px;
             margin: 50px auto;
             padding: 20px;
-            background: #f5f5f5;
         }
         .question {
             background: white;
