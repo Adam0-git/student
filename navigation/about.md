@@ -228,6 +228,47 @@ To Your Oblivion by Mili
     }
 </script>
 
+<!-- Favorite Song grid -->
+<h2>Favorite Song</h2>
+<div class="grid-container" id="games_grid">
+    <!-- Favorite Song will be added here by JavaScript -->
+</div>
+
+<script>
+    var favorite_Songs = [
+        {
+            "img": "https://github.com/user-attachments/assets/25c5c0fa-0be3-4212-9897-12b345851a13",
+            "title": "Wuthering Waves. Open-world game"
+        },
+        {
+            "img": "https://github.com/user-attachments/assets/4320b238-2926-4a3c-9c34-622fb47669bc",
+            "title": "Honkai Star Rail. High quality game, low quality effort. My favorite character"
+        },
+        {
+            "img": "https://github.com/user-attachments/assets/0c1a33e0-04b1-43b8-9ee4-39946316da81",
+            "title": "Geometry Dash. Cube jump over spike. My hardest level beaten"
+        },
+        {
+            "img": "https://github.com/user-attachments/assets/a81d8c62-9fda-40c9-8f38-46aed9bcbbe0",
+            "title": "Limbus Company. Music carried game"
+        }
+    ];
+
+    var gamesContainer = document.getElementById("games_grid");
+    for (const game of favorite_games) {
+        var item = document.createElement("div");
+        item.className = "grid-item";
+        var img = document.createElement("img");
+        img.src = game.img;
+        img.alt = game.title;
+        var p = document.createElement("p");
+        p.textContent = game.title;
+        item.appendChild(img);
+        item.appendChild(p);
+        gamesContainer.appendChild(item);
+    }
+</script>
+
 Here are some places I have lived
 
 <comment>
