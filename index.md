@@ -53,3 +53,15 @@ Hi! My name is Adam Ong
 > Feel free to reach out if you'd like to collaborate or learn more about our work.
 
 <p style="color: #2A7DB1;">Tokyo Japan Tour: <a href="https://www.youtube.com/watch?v=ZPiVqy5n6FM" style="color: #2A7DB1; text-decoration: underline;">Video</a></p>
+
+
+let x = 112209;
+let total = x % 2;
+
+console.log(x + " % 2 = "  + total);
+
+if (x % 2 === 0) {
+    console.log(x + " number is even");
+} else {
+    console.log(x + " number is odd");
+}
