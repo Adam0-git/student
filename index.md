@@ -65,3 +65,10 @@ if (x % 2 === 0) {
 } else {
     console.log(x + " number is odd");
 }
+
+
+let x = 11222009;
+let y = 1202026;
+let total1 = x + y + 2; // total = 10 + 3 + 2 = 15
+
+console.log("The total is: " + total1); // final output
