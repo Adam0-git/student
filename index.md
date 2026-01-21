@@ -377,7 +377,7 @@ Hi! My name is Adam Ong
     </script>
 </body>
 </html>
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -392,7 +392,7 @@ Hi! My name is Adam Ong
             background-color: #161515;
         }
         .container {
-            background-color: white;
+            background-color: black;
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
