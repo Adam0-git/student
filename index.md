@@ -384,29 +384,10 @@ def sum_numbers(n):
         total += i
     return total
 
-# Display formatted output
-print("=" * 60)
-print("=== Sum Numbers from 1 to n - Running Code ===")
-print("=" * 60)
-print()
-
 # Test with n = 5
-n = 5
-result = sum_numbers(n)
-print(f"1. Input value (n): {n}")
-print()
-print(f"2. Calculation: 1 + 2 + 3 + 4 + 5")
-print()
-print(f"3. Result: {result}")
-print()
+result = sum_numbers(5)
+print(f"Sum of numbers from 1 to 5: {result}")
 
 # Additional test cases
-print("=" * 60)
-print("=== Additional Test Cases ===")
-print("=" * 60)
-print()
-print(f"1. Sum from 1 to 10: {sum_numbers(10)}")
-print()
-print(f"2. Sum from 1 to 100: {sum_numbers(100)}")
-print()
-print(f"3. Sum from 1 to 1000: {sum_numbers(1000)}")
+print(f"Sum of numbers from 1 to 10: {sum_numbers(10)}")
+print(f"Sum of numbers from 1 to 100: {sum_numbers(100)}")
