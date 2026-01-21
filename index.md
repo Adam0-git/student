@@ -305,19 +305,19 @@ Hi! My name is Adam Ong
         printHeader("=== Exercise 1: Array Basics - Access Elements ===");
 
         // Create an array with 5 different items
-        const favoriteMovies = ["Inception", "The Matrix", "Interstellar", "The Shawshank Redemption", "Pulp Fiction"];
+        const favoriteSong = ["Compass", "Through Patches of Voilet", "Peach Pit and Cyanide", "Hero", "Between Two Worlds"];
 
         // 1. Print the entire array
-        print("1. Entire array: " + JSON.stringify(favoriteMovies));
+        print("1. Entire array: " + JSON.stringify(favoriteSongs));
 
         // 2. Access and print the first element (index 0)
-        print("2. First element (index 0): " + favoriteMovies[0]);
+        print("2. First element (index 0): " + favoriteSongs[0]);
 
         // 3. Access and print the last element
-        print("3. Last element: " + favoriteMovies[favoriteMovies.length - 1]);
+        print("3. Last element: " + favoriteSongs[favoriteSongs.length - 1]);
 
         // 4. Print the total number of items in the array
-        print("4. Total number of items: " + favoriteMovies.length);
+        print("4. Total number of items: " + favoriteSongs.length);
 
 
         // ===== EXERCISE 2: MODIFY ARRAYS =====
