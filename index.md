@@ -390,7 +390,7 @@ Hi! My name is Adam Ong
             max-width: 600px;
             margin: 50px auto;
             padding: 20px;
-            background-color: #f5f5f5;
+            background-color: #020202;
         }
         .container {
             background-color: white;
