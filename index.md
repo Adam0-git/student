@@ -54,88 +54,12 @@ Hi! My name is Adam Ong
 
 <p style="color: #2A7DB1;">Tokyo Japan Tour: <a href="https://www.youtube.com/watch?v=ZPiVqy5n6FM" style="color: #2A7DB1; text-decoration: underline;">Video</a></p>
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Array</title>
-    <style>
-        body {
-            font-family: 'Courier New', monospace;
-            background: #1e1e1e;
-            color: #d4d4d4;
-            padding: 20px;
-            margin: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        h2 {
-            color: #4ec9b0;
-            margin-bottom: 20px;
-        }
-        .output {
-            background: #252526;
-            border: 1px solid #3e3e42;
-            border-radius: 4px;
-            padding: 15px;
-            margin-top: 20px;
-            white-space: pre-wrap;
-            font-size: 14px;
-            line-height: 1.6;
-        }
-        .output-line {
-            margin: 5px 0;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h2>Array Output</h2>
-        <div class="output" id="output"></div>
-    </div>
-
-    <script>
-        // Capture console.log output
-        const outputDiv = document.getElementById('output');
-        const originalLog = console.log;
-        console.log = function(...args) {
-            const line = document.createElement('div');
-            line.className = 'output-line';
-            line.textContent = args.join(' ');
-            outputDiv.appendChild(line);
-            originalLog.apply(console, args);
-        };
-
-        // Your code starts here
-        let x = 112209;
-        let total = x % 2;
-
-        console.log(x + " % 2 = " + total);
-
-        if (x % 2 === 0) {
-            console.log(x + " number is even");
-        } else {
-            console.log(x + " number is odd");
-        }
-
-        // Second part
-        let x2 = 11222009;
-        let y = 1202026;
-        let total1 = x2 + y + 2; // total = 10 + 3 + 2 = 15
-
-        console.log("The total is: " + total1); // final output
-    </script>
-</body>
-</html>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nested Conditional Challenge</title>
+    <title>Combined Code Runner</title>
     <style>
         body {
             font-family: 'Courier New', monospace;
@@ -152,6 +76,13 @@ Hi! My name is Adam Ong
             color: #4ec9b0;
             margin-bottom: 10px;
         }
+        h3 {
+            color: #569cd6;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            border-top: 2px solid #3e3e42;
+            padding-top: 20px;
+        }
         p {
             color: #858585;
             margin-bottom: 20px;
@@ -161,14 +92,14 @@ Hi! My name is Adam Ong
             border: 1px solid #3e3e42;
             border-radius: 4px;
             padding: 15px;
-            margin-top: 20px;
+            margin-top: 10px;
             font-size: 13px;
             line-height: 1.6;
-            max-height: 600px;
+            max-height: 400px;
             overflow-y: auto;
         }
         .output-line {
-            margin: 2px 0;
+            margin: 5px 0;
         }
         .number-header {
             color: #569cd6;
@@ -189,16 +120,53 @@ Hi! My name is Adam Ong
 </head>
 <body>
     <div class="container">
-        <h2>Code Runner Challenge #3: Nested Conditional</h2>
+        <h2>JavaScript Code Runner</h2>
+        
+        <!-- First Section: Original Array Code -->
+        <h3>Section 1: Original Code</h3>
+        <div class="output" id="output1"></div>
+        
+        <!-- Second Section: Nested Conditional Challenge -->
+        <h3>Section 2: Nested Conditional Challenge</h3>
         <p>Checking numbers 1-50 for divisibility by factors of 50 (1, 2, 5, 10, 25, 50)</p>
-        <div class="output" id="output">Loading...</div>
+        <div class="output" id="output2">Loading...</div>
     </div>
 
     <script>
-        // Wait for DOM to be ready
+        // ===== SECTION 1: ORIGINAL CODE =====
+        const output1 = document.getElementById('output1');
+        const originalLog = console.log;
+        console.log = function(...args) {
+            const line = document.createElement('div');
+            line.className = 'output-line';
+            line.textContent = args.join(' ');
+            output1.appendChild(line);
+            originalLog.apply(console, args);
+        };
+
+        // Your original code
+        let x = 112209;
+        let total = x % 2;
+
+        console.log(x + " % 2 = " + total);
+
+        if (x % 2 === 0) {
+            console.log(x + " number is even");
+        } else {
+            console.log(x + " number is odd");
+        }
+
+        // Second part
+        let x2 = 11222009;
+        let y = 1202026;
+        let total1 = x2 + y + 2; // total = 10 + 3 + 2 = 15
+
+        console.log("The total is: " + total1); // final output
+
+        // ===== SECTION 2: NESTED CONDITIONAL CHALLENGE =====
         window.addEventListener('DOMContentLoaded', function() {
-            const outputDiv = document.getElementById('output');
-            outputDiv.innerHTML = ''; // Clear loading message
+            const output2 = document.getElementById('output2');
+            output2.innerHTML = ''; // Clear loading message
             
             // Factors of 50: 1, 2, 5, 10, 25, 50
             const factors = [1, 2, 5, 10, 25, 50];
@@ -209,7 +177,7 @@ Hi! My name is Adam Ong
                 const header = document.createElement('div');
                 header.className = 'output-line number-header';
                 header.textContent = `Number ${num}:`;
-                outputDiv.appendChild(header);
+                output2.appendChild(header);
                 
                 // Nested conditionals for each factor
                 if (num % 1 === 0) {
@@ -263,7 +231,7 @@ Hi! My name is Adam Ong
                 const line = document.createElement('div');
                 line.className = 'output-line ' + className;
                 line.textContent = text;
-                outputDiv.appendChild(line);
+                output2.appendChild(line);
             }
         });
     </script>
