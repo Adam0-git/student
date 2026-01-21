@@ -378,6 +378,7 @@ Hi! My name is Adam Ong
 </body>
 </html>
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -389,10 +390,10 @@ Hi! My name is Adam Ong
             max-width: 600px;
             margin: 50px auto;
             padding: 20px;
-            background-color: #161515;
+            background-color: #f5f5f5;
         }
         .container {
-            background-color: black;
+            background-color: white;
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -405,7 +406,7 @@ Hi! My name is Adam Ong
             width: 100%;
             padding: 10px;
             font-size: 16px;
-            border: 2px solid #0a0909;
+            border: 2px solid #ddd;
             border-radius: 5px;
             margin-bottom: 15px;
             box-sizing: border-box;
@@ -426,7 +427,7 @@ Hi! My name is Adam Ong
         .result {
             margin-top: 20px;
             padding: 15px;
-            background-color: #0a0b0a;
+            background-color: #e8f5e9;
             border-left: 4px solid #4CAF50;
             border-radius: 5px;
             display: none;
@@ -443,7 +444,8 @@ Hi! My name is Adam Ong
 </head>
 <body>
     <div class="container">
-        <h1>Sum Numbers from 1 to n</h1>
+        <h1>Iterations</h1>
+        <h2>Sum Numbers from 1 to n</h2>
         <input type="number" id="numberInput" placeholder="Enter a number (e.g., 5)" value="5" min="1">
         <button onclick="calculateSum()">Calculate Sum</button>
         
