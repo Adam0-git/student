@@ -200,6 +200,9 @@ Hi! My name is Adam Ong
             const outputDiv = document.getElementById('output');
             outputDiv.innerHTML = ''; // Clear loading message
             
+            // Factors of 50: 1, 2, 5, 10, 25, 50
+            const factors = [1, 2, 5, 10, 25, 50];
+            
             // Loop through numbers 1-50
             for (let num = 1; num <= 50; num++) {
                 // Add number header
