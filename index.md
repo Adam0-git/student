@@ -129,3 +129,122 @@ Hi! My name is Adam Ong
     </script>
 </body>
 </html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Conditional Challenge</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #4ec9b0;
+            margin-bottom: 20px;
+        }
+        .output {
+            background: #252526;
+            border: 1px solid #3e3e42;
+            border-radius: 4px;
+            padding: 15px;
+            margin-top: 20px;
+            white-space: pre-wrap;
+            font-size: 13px;
+            line-height: 1.6;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        .output-line {
+            margin: 3px 0;
+        }
+        .divisible {
+            color: #4ec9b0;
+        }
+        .not-divisible {
+            color: #ce9178;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Code Runner Challenge #3: Nested Conditional</h2>
+        <p>Checking numbers 1-50 for divisibility by factors of 50 (1, 2, 5, 10, 25, 50)</p>
+        <div class="output" id="output"></div>
+    </div>
+
+    <script>
+        const outputDiv = document.getElementById('output');
+        
+        function addOutput(text, isDivisible) {
+            const line = document.createElement('div');
+            line.className = 'output-line ' + (isDivisible ? 'divisible' : 'not-divisible');
+            line.textContent = text;
+            outputDiv.appendChild(line);
+        }
+
+        // Factors of 50: 1, 2, 5, 10, 25, 50
+        const factors = [1, 2, 5, 10, 25, 50];
+
+        // Loop through numbers 1-50
+        for (let num = 1; num <= 50; num++) {
+            addOutput(`\n--- Checking number ${num} ---`, true);
+            
+            // Nested conditionals for each factor
+            if (num % 1 === 0) {
+                addOutput(`  ${num} is divisible by 1`, true);
+                
+                if (num % 2 === 0) {
+                    addOutput(`  ${num} is divisible by 2`, true);
+                    
+                    if (num % 5 === 0) {
+                        addOutput(`  ${num} is divisible by 5`, true);
+                        
+                        if (num % 10 === 0) {
+                            addOutput(`  ${num} is divisible by 10`, true);
+                            
+                            if (num % 25 === 0) {
+                                addOutput(`  ${num} is divisible by 25`, true);
+                                
+                                if (num % 50 === 0) {
+                                    addOutput(`  ${num} is divisible by 50 ⭐ (ALL FACTORS!)`, true);
+                                } else {
+                                    addOutput(`  ${num} is NOT divisible by 50`, false);
+                                }
+                            } else {
+                                addOutput(`  ${num} is NOT divisible by 25`, false);
+                            }
+                        } else {
+                            addOutput(`  ${num} is NOT divisible by 10`, false);
+                        }
+                    } else {
+                        addOutput(`  ${num} is NOT divisible by 5`, false);
+                    }
+                } else {
+                    addOutput(`  ${num} is NOT divisible by 2`, false);
+                    
+                    if (num % 5 === 0) {
+                        addOutput(`  ${num} is divisible by 5`, true);
+                        
+                        if (num % 25 === 0) {
+                            addOutput(`  ${num} is divisible by 25`, true);
+                        } else {
+                            addOutput(`  ${num} is NOT divisible by 25`, false);
+                        }
+                    } else {
+                        addOutput(`  ${num} is NOT divisible by 5`, false);
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
