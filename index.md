@@ -377,17 +377,118 @@ Hi! My name is Adam Ong
     </script>
 </body>
 </html>
-def sum_numbers(n):
-    """Calculate the sum of all numbers from 1 to n using iteration"""
-    total = 0
-    for i in range(1, n + 1):
-        total += i
-    return total
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e8f5e9;
+            border-left: 4px solid #4CAF50;
+            border-radius: 5px;
+            display: none;
+        }
+        .result.show {
+            display: block;
+        }
+        .calculation {
+            color: #666;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sum Numbers from 1 to n</h1>
+        <input type="number" id="numberInput" placeholder="Enter a number (e.g., 5)" value="5" min="1">
+        <button onclick="calculateSum()">Calculate Sum</button>
+        
+        <div id="result" class="result">
+            <h3>Result:</h3>
+            <p id="resultText"></p>
+            <p id="calculation" class="calculation"></p>
+        </div>
+    </div>
 
-# Test with n = 5
-result = sum_numbers(5)
-print(f"Sum of numbers from 1 to 5: {result}")
+    <script>
+        function sumNumbers(n) {
+            let total = 0;
+            for (let i = 1; i <= n; i++) {
+                total += i;
+            }
+            return total;
+        }
 
-# Additional test cases
-print(f"Sum of numbers from 1 to 10: {sum_numbers(10)}")
-print(f"Sum of numbers from 1 to 100: {sum_numbers(100)}")
+        function calculateSum() {
+            const n = parseInt(document.getElementById('numberInput').value);
+            
+            if (isNaN(n) || n < 1) {
+                alert('Please enter a valid positive number');
+                return;
+            }
+            
+            const result = sumNumbers(n);
+            
+            // Create the calculation string
+            let calcString = '';
+            for (let i = 1; i <= n; i++) {
+                calcString += i;
+                if (i < n) calcString += ' + ';
+            }
+            
+            document.getElementById('resultText').innerHTML = 
+                `<strong>Sum of numbers from 1 to ${n} = ${result}</strong>`;
+            document.getElementById('calculation').textContent = 
+                `Calculation: ${calcString} = ${result}`;
+            document.getElementById('result').classList.add('show');
+        }
+
+        // Calculate on page load with default value
+        calculateSum();
+    </script>
+</body>
+</html>
