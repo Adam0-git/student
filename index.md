@@ -123,7 +123,7 @@ Hi! My name is Adam Ong
         <h2>JavaScript Code Runner</h2>
         
         <!-- First Section: Original Array Code -->
-        <h3>Section 1: Original Code</h3>
+        <h3>Section 1: Mathematical Expressions</h3>
         <div class="output" id="output1"></div>
         
         <!-- Second Section: Nested Conditional Challenge -->
@@ -237,3 +237,76 @@ Hi! My name is Adam Ong
     </script>
 </body>
 </html>
+// ===== EXERCISE 1: ARRAY BASICS - ACCESS ELEMENTS =====
+console.log("=== Exercise 1: Array Basics - Access Elements ===");
+
+// Create an array with 5 different items
+const favoriteMovies = ["Inception", "The Matrix", "Interstellar", "The Shawshank Redemption", "Pulp Fiction"];
+
+// 1. Print the entire array
+console.log("1. Entire array:", favoriteMovies);
+
+// 2. Access and print the first element (index 0)
+console.log("2. First element (index 0):", favoriteMovies[0]);
+
+// 3. Access and print the last element
+console.log("3. Last element:", favoriteMovies[favoriteMovies.length - 1]);
+
+// 4. Print the total number of items in the array
+console.log("4. Total number of items:", favoriteMovies.length);
+
+
+// ===== EXERCISE 2: MODIFY ARRAYS =====
+console.log("\n=== Exercise 2: Modify Arrays ===");
+
+// Start with the shopping list
+let shoppingList = ["milk", "eggs", "bread", "cheese"];
+
+// 1. Print the original array
+console.log("1. Original array:", shoppingList);
+
+// 2. Change the second item to "butter"
+shoppingList[1] = "butter";
+console.log("2. After changing second item to 'butter':", shoppingList);
+
+// 3. Add "yogurt" to the end using push()
+shoppingList.push("yogurt");
+console.log("3. After adding 'yogurt' with push():", shoppingList);
+
+// 4. Remove "bread" from the array
+const breadIndex = shoppingList.indexOf("bread");
+if (breadIndex > -1) {
+    shoppingList.splice(breadIndex, 1);
+}
+console.log("4. After removing 'bread':", shoppingList);
+
+// 5. Print the final array
+console.log("5. Final array:", shoppingList);
+
+
+// ===== EXERCISE 3: LOOP THROUGH AN ARRAY =====
+console.log("\n=== Exercise 3: Loop Through an Array ===");
+
+// Create an array with 5 numbers
+const numbers = [10, 25, 30, 15, 20];
+
+console.log("Array:", numbers);
+
+// 1. Print each number with a message
+console.log("\n1. Each number with message:");
+for (let i = 0; i < numbers.length; i++) {
+    console.log("   Number:", numbers[i]);
+}
+
+// 2. Print each number multiplied by 2
+console.log("\n2. Each number multiplied by 2:");
+for (let i = 0; i < numbers.length; i++) {
+    console.log("   " + numbers[i] + " × 2 =", numbers[i] * 2);
+}
+
+// 3. Calculate and print the sum of all numbers
+let sum = 0;
+for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+}
+console.log("\n3. Sum of all numbers:", sum);
