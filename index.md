@@ -406,7 +406,7 @@ Hi! My name is Adam Ong
             width: 100%;
             padding: 10px;
             font-size: 16px;
-            border: 2px solid #ddd;
+            border: 2px solid #111010;
             border-radius: 5px;
             margin-bottom: 15px;
             box-sizing: border-box;
