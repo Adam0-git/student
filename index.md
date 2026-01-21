@@ -377,3 +377,18 @@ Hi! My name is Adam Ong
     </script>
 </body>
 </html>
+def sum_numbers(n):
+    """Calculate the sum of all numbers from 1 to n using iteration"""
+    total = 0
+    for i in range(1, n + 1):
+        total += i
+    return total
+
+# Test with n = 5
+result = sum_numbers(5)
+print(f"Sum of numbers from 1 to 5: {result}")
+print(f"Expected: 15 (1 + 2 + 3 + 4 + 5 = 15)")
+
+# Additional test cases
+print(f"\nSum of numbers from 1 to 10: {sum_numbers(10)}")
+print(f"Sum of numbers from 1 to 100: {sum_numbers(100)}")
