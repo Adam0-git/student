@@ -55,20 +55,79 @@ Hi! My name is Adam Ong
 <p style="color: #2A7DB1;">Tokyo Japan Tour: <a href="https://www.youtube.com/watch?v=ZPiVqy5n6FM" style="color: #2A7DB1; text-decoration: underline;">Video</a></p>
 
 
-let x = 112209;
-let total = x % 2;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Runner</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #4ec9b0;
+            margin-bottom: 20px;
+        }
+        .output {
+            background: #252526;
+            border: 1px solid #3e3e42;
+            border-radius: 4px;
+            padding: 15px;
+            margin-top: 20px;
+            white-space: pre-wrap;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .output-line {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>JavaScript Code Output</h2>
+        <div class="output" id="output"></div>
+    </div>
 
-console.log(x + " % 2 = "  + total);
+    <script>
+        // Capture console.log output
+        const outputDiv = document.getElementById('output');
+        const originalLog = console.log;
+        console.log = function(...args) {
+            const line = document.createElement('div');
+            line.className = 'output-line';
+            line.textContent = args.join(' ');
+            outputDiv.appendChild(line);
+            originalLog.apply(console, args);
+        };
 
-if (x % 2 === 0) {
-    console.log(x + " number is even");
-} else {
-    console.log(x + " number is odd");
-}
+        // Your code starts here
+        let x = 112209;
+        let total = x % 2;
 
+        console.log(x + " % 2 = " + total);
 
-let x = 11222009;
-let y = 1202026;
-let total1 = x + y + 2; // total = 10 + 3 + 2 = 15
+        if (x % 2 === 0) {
+            console.log(x + " number is even");
+        } else {
+            console.log(x + " number is odd");
+        }
 
-console.log("The total is: " + total1); // final output
+        // Second part
+        let x2 = 11222009;
+        let y = 1202026;
+        let total1 = x2 + y + 2; // total = 10 + 3 + 2 = 15
+
+        console.log("The total is: " + total1); // final output
+    </script>
+</body>
+</html>
