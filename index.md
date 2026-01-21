@@ -427,7 +427,7 @@ Hi! My name is Adam Ong
         .result {
             margin-top: 20px;
             padding: 15px;
-            background-color: #e8f5e9;
+            background-color: #050505;
             border-left: 4px solid #4CAF50;
             border-radius: 5px;
             display: none;
