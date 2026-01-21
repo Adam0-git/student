@@ -237,76 +237,144 @@ Hi! My name is Adam Ong
     </script>
 </body>
 </html>
-// ===== EXERCISE 1: ARRAY BASICS - ACCESS ELEMENTS =====
-console.log("=== Exercise 1: Array Basics - Access Elements ===");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Exercises</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #4ec9b0;
+            margin-bottom: 20px;
+        }
+        .output {
+            background: #252526;
+            border: 1px solid #3e3e42;
+            border-radius: 4px;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        .output-line {
+            margin: 5px 0;
+        }
+        .header {
+            color: #569cd6;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Array Exercises - Running Code</h2>
+        <div class="output" id="output"></div>
+    </div>
 
-// Create an array with 5 different items
-const favoriteMovies = ["Inception", "The Matrix", "Interstellar", "The Shawshank Redemption", "Pulp Fiction"];
+    <script>
+        const outputDiv = document.getElementById('output');
+        
+        function print(text) {
+            const line = document.createElement('div');
+            line.className = 'output-line';
+            line.textContent = text;
+            outputDiv.appendChild(line);
+        }
+        
+        function printHeader(text) {
+            const line = document.createElement('div');
+            line.className = 'output-line header';
+            line.textContent = text;
+            outputDiv.appendChild(line);
+        }
 
-// 1. Print the entire array
-console.log("1. Entire array:", favoriteMovies);
+        // ===== EXERCISE 1: ARRAY BASICS - ACCESS ELEMENTS =====
+        printHeader("=== Exercise 1: Array Basics - Access Elements ===");
 
-// 2. Access and print the first element (index 0)
-console.log("2. First element (index 0):", favoriteMovies[0]);
+        // Create an array with 5 different items
+        const favoriteMovies = ["Inception", "The Matrix", "Interstellar", "The Shawshank Redemption", "Pulp Fiction"];
 
-// 3. Access and print the last element
-console.log("3. Last element:", favoriteMovies[favoriteMovies.length - 1]);
+        // 1. Print the entire array
+        print("1. Entire array: " + JSON.stringify(favoriteMovies));
 
-// 4. Print the total number of items in the array
-console.log("4. Total number of items:", favoriteMovies.length);
+        // 2. Access and print the first element (index 0)
+        print("2. First element (index 0): " + favoriteMovies[0]);
 
+        // 3. Access and print the last element
+        print("3. Last element: " + favoriteMovies[favoriteMovies.length - 1]);
 
-// ===== EXERCISE 2: MODIFY ARRAYS =====
-console.log("\n=== Exercise 2: Modify Arrays ===");
-
-// Start with the shopping list
-let shoppingList = ["milk", "eggs", "bread", "cheese"];
-
-// 1. Print the original array
-console.log("1. Original array:", shoppingList);
-
-// 2. Change the second item to "butter"
-shoppingList[1] = "butter";
-console.log("2. After changing second item to 'butter':", shoppingList);
-
-// 3. Add "yogurt" to the end using push()
-shoppingList.push("yogurt");
-console.log("3. After adding 'yogurt' with push():", shoppingList);
-
-// 4. Remove "bread" from the array
-const breadIndex = shoppingList.indexOf("bread");
-if (breadIndex > -1) {
-    shoppingList.splice(breadIndex, 1);
-}
-console.log("4. After removing 'bread':", shoppingList);
-
-// 5. Print the final array
-console.log("5. Final array:", shoppingList);
+        // 4. Print the total number of items in the array
+        print("4. Total number of items: " + favoriteMovies.length);
 
 
-// ===== EXERCISE 3: LOOP THROUGH AN ARRAY =====
-console.log("\n=== Exercise 3: Loop Through an Array ===");
+        // ===== EXERCISE 2: MODIFY ARRAYS =====
+        printHeader("\n=== Exercise 2: Modify Arrays ===");
 
-// Create an array with 5 numbers
-const numbers = [10, 25, 30, 15, 20];
+        // Start with the shopping list
+        let shoppingList = ["milk", "eggs", "bread", "cheese"];
 
-console.log("Array:", numbers);
+        // 1. Print the original array
+        print("1. Original array: " + JSON.stringify(shoppingList));
 
-// 1. Print each number with a message
-console.log("\n1. Each number with message:");
-for (let i = 0; i < numbers.length; i++) {
-    console.log("   Number:", numbers[i]);
-}
+        // 2. Change the second item to "butter"
+        shoppingList[1] = "butter";
+        print("2. After changing second item to 'butter': " + JSON.stringify(shoppingList));
 
-// 2. Print each number multiplied by 2
-console.log("\n2. Each number multiplied by 2:");
-for (let i = 0; i < numbers.length; i++) {
-    console.log("   " + numbers[i] + " × 2 =", numbers[i] * 2);
-}
+        // 3. Add "yogurt" to the end using push()
+        shoppingList.push("yogurt");
+        print("3. After adding 'yogurt' with push(): " + JSON.stringify(shoppingList));
 
-// 3. Calculate and print the sum of all numbers
-let sum = 0;
-for (let i = 0; i < numbers.length; i++) {
-    sum += numbers[i];
-}
-console.log("\n3. Sum of all numbers:", sum);
+        // 4. Remove "bread" from the array
+        const breadIndex = shoppingList.indexOf("bread");
+        if (breadIndex > -1) {
+            shoppingList.splice(breadIndex, 1);
+        }
+        print("4. After removing 'bread': " + JSON.stringify(shoppingList));
+
+        // 5. Print the final array
+        print("5. Final array: " + JSON.stringify(shoppingList));
+
+
+        // ===== EXERCISE 3: LOOP THROUGH AN ARRAY =====
+        printHeader("\n=== Exercise 3: Loop Through an Array ===");
+
+        // Create an array with 5 numbers
+        const numbers = [10, 25, 30, 15, 20];
+
+        print("Array: " + JSON.stringify(numbers));
+
+        // 1. Print each number with a message
+        print("\n1. Each number with message:");
+        for (let i = 0; i < numbers.length; i++) {
+            print("   Number: " + numbers[i]);
+        }
+
+        // 2. Print each number multiplied by 2
+        print("\n2. Each number multiplied by 2:");
+        for (let i = 0; i < numbers.length; i++) {
+            print("   " + numbers[i] + " × 2 = " + (numbers[i] * 2));
+        }
+
+        // 3. Calculate and print the sum of all numbers
+        let sum = 0;
+        for (let i = 0; i < numbers.length; i++) {
+            sum += numbers[i];
+        }
+        print("\n3. Sum of all numbers: " + sum);
+    </script>
+</body>
+</html>
