@@ -18,7 +18,6 @@ Create a basic game level with a player character. Use the GameEngine to set up 
 {% endcapture %}
 
 {% capture code1 %}
-import GameEnvBackground from '/assets/js/BetterGameEngine/essentials/GameEnvBackground.js';
 --
 layout: post
 courses: { csse: {week: 8}, csp: {week: 17}, csa: {week: 20 } }
@@ -384,8 +383,8 @@ The GameEngine teaches:
 - Verify background image path
 - Check canvas dimensions
 - Look for JavaScript errors in console
-  
-
+  }
+}
 export const gameLevelClasses = [CustomLevel];
 // Export for game runner
 export { GameControl };
