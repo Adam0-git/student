@@ -5,7 +5,6 @@ hide: true
 show_reading_time: false
 permalink: /homework
 ---
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -17,7 +16,7 @@ permalink: /homework
       max-width: 700px;
       margin: 40px auto;
       padding: 20px;
-      background: #f4f6f9;
+      background: #070707;
       color: #333;
     }
     h1 { color: #2c3e50; }
@@ -65,7 +64,7 @@ permalink: /homework
     <div id="link-container"></div>
     <script>
       const link = document.createElement("a");
-      link.href = "https://developer.mozilla.org";
+      link.href = "github.com/adam0-git";
       link.textContent = "Visit MDN Web Docs";
       link.target = "_blank";
       document.getElementById("link-container").appendChild(link);
