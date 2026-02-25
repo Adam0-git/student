@@ -57,7 +57,7 @@ Hi! My name is Adam Ong
 </div>
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
     <a href="{{site.baseurl}}/accomplishments" style="text-decoration: none;">
-        <div style="background-color: rgb(0, 0, 0); color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+        <div style="background-color: rgb(85, 5, 5); color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
             Accomplishments Link
         </div>
 </div>
