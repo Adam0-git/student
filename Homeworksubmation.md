@@ -22,3 +22,5 @@ From these homeworks, I was able to learn about different ways to code using Jav
 (Nested Conditionals) Short explanation: This is how computers sees options and makes a decision. It uses If or Else statements.          https://github.com/Adam0-git/student/blob/main/2025-01-08-NestedConditionals-Homework.ipynb
 
 (Mathematical Expressions) Short explanation: This is how numbers are calculated. By using variables and operators to calculate integers.     https://github.com/Adam0-git/student/blob/main/2026-01-20-math-exp.ipynb
+
+(Classes & Methods) Short explantation: A class acts as a blueprint for creating objects and defines their behavior. A method is defined in a class to represent action        https://github.com/Adam0-git/student/blob/main/2026-1-27-ClassesAndMethods-Lesson.ipynb
