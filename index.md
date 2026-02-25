@@ -44,7 +44,28 @@ Hi! My name is Adam Ong
         </div>
     </a>
 </div>
-
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+    <a href="{{site.baseurl}}/Homeworksubmation" style="text-decoration: none;">
+        <div style="background-color: #b76c4aff; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Homework Submation Link
+        </div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+    <a href="{{site.baseurl}}/Nightatthemuseum" style="text-decoration: none;">
+        <div style="background-color: #b76c4aff; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            N@TM Link
+        </div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+    <a href="{{site.baseurl}}/accomplishments" style="text-decoration: none;">
+        <div style="background-color: #b76c4aff; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Accomplishments Link
+        </div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+    <a href="{{site.baseurl}}/cookie-clicker" style="text-decoration: none;">
+        <div style="background-color: #b76c4aff; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Cookie Clicker
+        </div>
 <br>
 
 <!-- Contact Section -->
