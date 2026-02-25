@@ -52,7 +52,7 @@ Hi! My name is Adam Ong
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
     <a href="{{site.baseurl}}/Nightatthemuseum" style="text-decoration: none;">
         <div style="background-color: rgb(56, 48, 45); color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
-            N@TM Link
+            Night at the museum
         </div>
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
