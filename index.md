@@ -54,13 +54,13 @@ Hi! My name is Adam Ong
         <div style="background-color: rgb(56, 48, 45); color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
             N@TM Link
         </div>
-</div>
+
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
     <a href="{{site.baseurl}}/accomplishments" style="text-decoration: none;">
         <div style="background-color: rgb(85, 5, 5); color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
             Accomplishments Link
         </div>
-</div>
+
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
     <a href="{{site.baseurl}}/cookie-clicker" style="text-decoration: none;">
         <div style="background-color: rgb(129, 49, 12); color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
