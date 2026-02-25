@@ -1,121 +1,24 @@
 ---
-layout: post 
-title: Homework Submation Blog
-hide: true
-show_reading_time: false
-permalink: /homework
+toc: Title
+layout: post
+title: Homework Summation Blog
+description: These are all the homeworks I have completed.
+author: Adam O
 ---
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>JS Text & Links Demo</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 20px;
-      background: #070707;
-      color: #333;
-    }
-    h1 { color: #2c3e50; }
-    .card {
-      background: white;
-      border-radius: 8px;
-      padding: 20px;
-      margin: 20px 0;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    a { color: #3498db; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    button {
-      margin-top: 10px;
-      padding: 8px 16px;
-      background: #3498db;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    button:hover { background: #2980b9; }
-    #dynamic-output { margin-top: 12px; font-size: 15px; }
-    #link-list { list-style: none; padding: 0; }
-    #link-list li { margin: 8px 0; }
-  </style>
-</head>
-<body>
+From these homeworks, I was able to learn about different ways to code using Javascript.
 
-  <h1>JavaScript Text & Links Demo</h1>
+<h2>Homeworks (please copy and paste the links on a new tab)</h2>
 
-  <!-- 1. Static text via innerHTML -->
-  <div class="card">
-    <h2>1. Display Text with JavaScript</h2>
-    <div id="static-text"></div>
-    <script>
-      document.getElementById("static-text").innerHTML =
-        "👋 Hello! This paragraph was written using <strong>JavaScript</strong>.";
-    </script>
-  </div>
+(Arrays) Short explanation: This is how data is stored, using an index as a label for each item within the array.        https://github.com/Adam0-git/student/blob/main/2026-01-07-arrays.ipynb
 
-  <!-- 2. Create a link dynamically -->
-  <div class="card">
-    <h2>2. Create a Link Dynamically</h2>
-    <div id="link-container"></div>
-    <script>
-      const link = document.createElement("a");
-      link.href = "github.com/adam0-git";
-      link.textContent = "Visit MDN Web Docs";
-      link.target = "_blank";
-      document.getElementById("link-container").appendChild(link);
-    </script>
-  </div>
+(Data Abstraction) Short explanation: This is what is presented. What the frontend shows vs what the backend has. Illustrates what wants to be shown       https://github.com/Adam0-git/student/blob/main/2026-01-09-data_abstraction.ipynb
 
-  <!-- 3. Render a list of links -->
-  <div class="card">
-    <h2>3. Render a List of Links</h2>
-    <ul id="link-list"></ul>
-    <script>
-      const resources = [
-        { label: "MDN Web Docs",    url: "https://developer.mozilla.org" },
-        { label: "JavaScript.info", url: "https://javascript.info" },
-        { label: "W3Schools JS",    url: "https://www.w3schools.com/js/" },
-        { label: "Can I Use",       url: "https://caniuse.com" },
-      ];
+(Iteration) Short explanation: This is how code loops to automate tasks and help remove excessive code           https://github.com/Adam0-git/student/blob/main/2026-01-12-iteration-homework.ipynb
 
-      const list = document.getElementById("link-list");
-      resources.forEach(({ label, url }) => {
-        const li   = document.createElement("li");
-        const a    = document.createElement("a");
-        a.href        = url;
-        a.textContent = label;
-        a.target      = "_blank";
-        li.appendChild(a);
-        list.appendChild(li);
-      });
-    </script>
-  </div>
+(JSON) Short explanation: This is a language that helps organize information          https://github.com/Adam0-git/student/blob/main/2026-01-16-json_lesson.ipynb
 
-  <!-- 4. Dynamic text on button click -->
-  <div class="card">
-    <h2>4. Update Text on Click</h2>
-    <button onclick="updateText()">Click Me</button>
-    <div id="dynamic-output">Waiting for click...</div>
-    <script>
-      const messages = [
-        "You clicked! 🎉",
-        "Nice one! 👏",
-        "Keep going! 🚀",
-        "JavaScript is fun! 😄",
-      ];
-      let clickCount = 0;
-      function updateText() {
-        const msg = messages[clickCount % messages.length];
-        document.getElementById("dynamic-output").textContent = msg;
-        clickCount++;
-      }
-    </script>
-  </div>
+(Booleans) Short explanation: This is how code determines decisions and evaluates conditions. It uses only 2 values which are true or false         https://github.com/Adam0-git/student/blob/main/2026-01-20-booleans-lessons.ipynb
 
-</body>
-</html>
+(Nested Conditionals) Short explanation: This is how computers sees options and makes a decision. It uses If or Else statements          https://github.com/Adam0-git/student/blob/main/2025-01-08-NestedConditionals-Homework.ipynb
+
+(Mathematical Expressions) Short explanation: This is how numbers are calculated. By using variables and operators to calculate integers     https://github.com/Adam0-git/student/blob/main/2026-01-20-math-exp.ipynb
